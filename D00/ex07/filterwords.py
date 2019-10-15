@@ -19,7 +19,7 @@ str = str.split()
 i = 0
 end = len(str)
 while i < end:
-    if len(str[i]) < int(max_size):
+    if len(str[i]) <= int(max_size):
         del str[i]
         i  = -1
         end -= 1  

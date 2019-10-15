@@ -1,2 +1,2 @@
-phrase = "The right format"
+phrase = "The right formatasdadsdasdasadsdsaadsasdsadsadadsasdasdasdasdadsadsads64846ads456ads456ads456asd56456a4sd456ads456ad64546asd64ads646a54ds645asd4655ads468ads786787ads684dad648:w"
 print(phrase.rjust(42, '-'))

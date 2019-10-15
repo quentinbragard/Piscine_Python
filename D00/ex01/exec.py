@@ -2,7 +2,7 @@ import sys
 i = 1
 word = ""
 if len(sys.argv) < 2:
-    exit()
+    sys.exit()
 while (i < len(sys.argv)):
     j = 0
     while j < len(sys.argv[i]):
