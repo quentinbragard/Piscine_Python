@@ -11,4 +11,5 @@ def enumerate_evaluate(coefs, words):
 
 words = ["Le", "Lorem", "Ipsum", "est", "simple"]
 coefs = [1.0, 2.0, 1.0, 4.0, 0.5]
+
 print(enumerate_evaluate(coefs, words))

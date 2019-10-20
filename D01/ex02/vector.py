@@ -43,9 +43,10 @@ class Vector:
         self.coordinates = value
     
     def __add__(self, scalar):
+        print("here")
         if type(scalar) != int and type(scalar) != float and type(scalar) != Vector:
                 print("Warning : Addition can only be perform with a scalar or a vector")
-                return
+                #return Vector(for i in self: i + scalar)
         if type(scalar) == int or type(scalar) == float:
             i = len(self.coordinates) - 1
             while (i >= 0):
@@ -72,7 +73,8 @@ class Vector:
                 self.coordinates[i] = self.coordinates[i] - scalar.coordinates[i]
                 i -=1
 
-    def __div__(self, scalar):
+    def __truediv__(self, scalar):
+        print("la")
         if type(scalar) != int and type(scalar) != float:
                 print("Warning : Division can only be perform with a scalar")
                 return

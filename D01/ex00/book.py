@@ -2,9 +2,13 @@ from recipy import *
 import datetime
 
 class Book:
-    def __init__(self, name, recipes_list):
+    def __init__(self, name):
         self.name = name
-        self.recipes_list = recipes_list
+        self.recipes_list = {
+            "starter" : {},
+            "main_courses" : {},
+            "dessert" : {}
+        }
 
     def _get_creation_date(self):
         return self._creation_date

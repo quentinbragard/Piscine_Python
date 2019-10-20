@@ -38,7 +38,7 @@ Type : {} """.format(self.name, self.cooking_lvl, self.cooking_time, self.ingred
                 sys.exit("Error : The Cooking Time must be a positive or null integer.")
             super(Recipe, self).__setattr__(name, value)
         if name == "ingredients":
-            if type(value) != type(("str", "str")):
+            if not isinstance(value, list):
                 sys.exit("Error : The ingredients must be written in a list. Use () when typing them.")
             super(Recipe, self).__setattr__(name, value)
         if name == "description":
